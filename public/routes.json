@@ -1,0 +1,14 @@
+{
+    "routes": [
+      {
+        "route": "/"
+  
+      },
+      {
+        "route": "/lti/login/*"
+     
+      }
+     
+    ]
+  
+  }
