@@ -8,7 +8,7 @@ export default () => {
   var params = {
     client_id: "fASx3Xm4zgQV5DcP",
     iss: "https://salmon-mushroom-0db3b0d10.azurestaticapps.net",
-    target_link_uri: "https://tst-tsugi.curriki.org/mod/curriki/content",
+    target_link_uri: "https://tst-tsugi.curriki.org/mod/curriki/?activity=600",
     login_hint: "7",
     lti_message_hint: "0",
     lti_deployment_id: "1",

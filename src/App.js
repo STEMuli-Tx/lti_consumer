@@ -4,28 +4,31 @@ export default function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">JWK</Link>
-            </li>
-          </ul>
-        </nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/lti/auth">About</Link>
+          </li>
+          <li>
+            <Link to="/dashboard">Dashboard</Link>
+          </li>
+        </ul>
+
+        <hr />
 
         {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
+          <Route exact path="/">
+            <Form />
+          </Route>
+          <Route path="/lti/auth">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Form />
+          <Route path="/dashboard">
+            <Dashboard />
           </Route>
         </Switch>
       </div>
@@ -33,14 +36,18 @@ export default function App() {
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
-
 function About() {
-  return <h2>About</h2>;
+  return (
+    <div>
+      <h2>About</h2>
+    </div>
+  );
 }
 
-function Users() {
-  return <h2>Users</h2>;
+function Dashboard() {
+  return (
+    <div>
+      <h2>Dashboard</h2>
+    </div>
+  );
 }
