@@ -1,4 +1,4 @@
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Form from "./Form";
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/lti/login">About</Link>
+            <Link to="/lti/login/*">About</Link>
           </li>
           <li>
             <Link to="/dashboard">Dashboard</Link>
