@@ -9,7 +9,7 @@ export default function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/lti/login/*">About</Link>
+            <Link to="/lti/login/">About</Link>
           </li>
           <li>
             <Link to="/dashboard">Dashboard</Link>
@@ -24,7 +24,7 @@ export default function App() {
           <Route exact path="/">
             <Form />
           </Route>
-          <Route path="/lti/login">
+          <Route path="/lti/login/*">
             <About />
           </Route>
           <Route path="/dashboard">
