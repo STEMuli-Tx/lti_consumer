@@ -24,7 +24,7 @@ export default function App() {
           <Route exact path="/">
             <Form />
           </Route>
-          <Route path="/lti/auth">
+          <Route path="/lti/login">
             <About />
           </Route>
           <Route path="/dashboard">
