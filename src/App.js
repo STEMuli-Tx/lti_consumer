@@ -9,7 +9,7 @@ export default function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/lti/auth">About</Link>
+            <Link to="/lti/login">About</Link>
           </li>
           <li>
             <Link to="/dashboard">Dashboard</Link>
