@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 
-export default () => {
+function Form() {
   var action =
     "https://tst-tsugi.curriki.org/lti/oidc_login/0EE38DD5-428F-2DB1-4E24-96F7F65C8C07";
   var method = "POST";
@@ -44,7 +44,7 @@ export default () => {
       </button>
     </Fragment>
   );
-};
+}
 
 /*
   iss:"https://stemuli.net",
@@ -84,3 +84,4 @@ export default () => {
 //   lti_message_hint: "My LTI message hint!",
 //   target_link_uri: "https://saltire.lti.app/tool"
 // };
+export default Form;
