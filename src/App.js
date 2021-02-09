@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Form from "./Form";
+import Auth from "./Auth";
 export default function App() {
   return (
     <Router>
@@ -22,7 +23,7 @@ export default function App() {
             <Form />
           </Route>
           <Route path="/lti/login/*">
-            <About />
+            <Auth />
           </Route>
         </Switch>
       </div>
