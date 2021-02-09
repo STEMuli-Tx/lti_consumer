@@ -1,9 +1,8 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect } from "react";
 import urlParams from "./util/urlParams";
 function Auth() {
-  let action = "";
   var method = "POST";
-  const [state, setState] = useState(null);
+
   useEffect(() => {
     // Update the document title using the browser API
     var form = document.querySelector("#authForm");
