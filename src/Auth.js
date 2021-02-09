@@ -1,9 +1,9 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import urlParams from "./util/urlParams";
 function Auth() {
   let action = "";
   var method = "POST";
-
+  const [state, setState] = useState(null);
   useEffect(() => {
     // Update the document title using the browser API
     var form = document.querySelector("#authForm");
@@ -22,8 +22,8 @@ function Auth() {
       id_token: "jwt_token",
     };
 
-    action = urlParams("redirect_uri");
-
+    form.action = urlParams("redirect_uri");
+    form.method = method;
     for (var name in params) {
       var node = document.createElement("input");
       node.name = name;
@@ -33,12 +33,10 @@ function Auth() {
     }
     // var output = document.querySelector("code");
     // output.textContent = JSON.stringify(params, null, 2);
-    form.action = action;
-    form.method = method;
-    console.log(form.action);
-    console.log(form);
+
     // document.getElementById("authForm").submit();
   });
+
   console.log("here");
   return (
     <Fragment>
