@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import urlParams from "./util/urlParams";
+import axios from "axios";
 function Auth() {
   var method = "POST";
 
@@ -21,22 +22,25 @@ function Auth() {
       id_token: "jwt_token",
     };
 
-    form.action = urlParams("redirect_uri");
-    form.method = method;
-    for (var name in params) {
-      var node = document.createElement("input");
-      node.name = name;
-      node.type = "hidden";
-      node.value = params[name];
-      form.appendChild(node);
-    }
+    // form.action = urlParams("redirect_uri");
+    // form.method = method;
+    // for (var name in params) {
+    //   var node = document.createElement("input");
+    //   node.name = name;
+    //   node.type = "hidden";
+    //   node.value = params[name];
+    //   form.appendChild(node);
+    // }
     // var output = document.querySelector("code");
     // output.textContent = JSON.stringify(params, null, 2);
 
     document.getElementById("authForm").submit();
+    axios.post(urlParams("redirect_uri"), params, {
+      headers: { "Content-Type": "x-www-form-urlencoded" },
+      Authorization: urlParams("state"),
+    });
   });
 
-  console.log("here");
   return (
     <Fragment>
       <form id="authForm"></form>
