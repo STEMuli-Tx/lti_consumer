@@ -46,42 +46,4 @@ function Form() {
   );
 }
 
-/*
-  iss:"https://stemuli.net",
-  target_link_uri: https://lti.tool.com,
-  login_hint:3,
-  lti_message_hint:0,
-  client_id:"RHFJKFKF",
-  lti_deployment_id:1
-  
-  */
-// Definitions
-// var action = "https://saltire.lti.app/tool";
-// var method = "POST";
-
-// var params = {
-//   iss: "https://saltire.lti.app/platform",
-//   target_link_uri: "https://saltire.lti.app/tool",
-//   login_hint: "3",
-//   launch_presentation_css_url: "https://saltire.lti.app/css/tc.css",
-//   launch_presentation_document_target: "iframe",
-//   launch_presentation_locale: "en-GB",
-//   launch_presentation_return_url: "https://saltire.lti.app/tc-return.php",
-//   lti_message_type: "basic-lti-launch-request",
-//   lti_version: "1.3.0",
-//   user_id: "29123",
-//   platform_id: "https://saltire.lti.app/platform",
-//   oauth_consumer_key: "saltire.lti.app",
-//   oauth_signature_method: "RS256",
-//   custom_oauth2_access_token_url:
-//     "https://saltire.lti.app/platform/token/s13c97ca92663edfa2bf1ceb6f9979aed"
-// };
-// var params = {
-//   client_id: "saltire.lti.app",
-//   iss: "https://saltire.lti.app/platform",
-//   login_hint: "29123",
-//   lti_deployment_id: "cLWwj9cbmkSrCNsckEFBmA",
-//   lti_message_hint: "My LTI message hint!",
-//   target_link_uri: "https://saltire.lti.app/tool"
-// };
 export default Form;

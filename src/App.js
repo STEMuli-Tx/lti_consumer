@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Form from "./Form";
 import Auth from "./Auth";
+import JWKS from "./jwks.json";
 export default function App() {
   return (
     <Router>
@@ -11,6 +12,9 @@ export default function App() {
           </li>
           <li>
             <Link to="/lti/login">About</Link>
+          </li>
+          <li>
+            <Link to="/lti/jwks">JWKS</Link>
           </li>
         </ul>
 
