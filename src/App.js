@@ -11,9 +11,6 @@ export default function App() {
           <li>
             <Link to="/lti/login/">About</Link>
           </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
         </ul>
 
         <hr />
@@ -26,9 +23,6 @@ export default function App() {
           </Route>
           <Route path="/lti/login/*">
             <About />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
           </Route>
         </Switch>
       </div>

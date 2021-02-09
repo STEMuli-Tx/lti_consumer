@@ -7,7 +7,7 @@
       },
       {
         "route": "/lti/login/*",
-        "serve":"/lti/login"
+        "serve":"/index2.html"
 
       }
      
