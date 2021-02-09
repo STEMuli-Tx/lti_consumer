@@ -1,16 +1,11 @@
 {
     "routes": [
       {
-        "route": "/",
-        "serve":"/"
+        "route": "/*",
+        "serve":"/index.html"
   
-      },
-      {
-        "route": "/lti/login/*",
-        "serve":"/index2.html"
-
       }
-     
+      
     ]
   
   }
