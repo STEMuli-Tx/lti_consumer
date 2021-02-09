@@ -39,7 +39,7 @@ function Auth() {
     console.log(form);
     // document.getElementById("authForm").submit();
   });
-
+  console.log("here");
   return (
     <Fragment>
       <form id="authForm"></form>
