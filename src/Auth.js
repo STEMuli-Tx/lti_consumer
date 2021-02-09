@@ -16,7 +16,7 @@ function Auth() {
       nonce: "6022254d9c5df",
       iat: 1612850510,
       exp: 1612850570,
-      aud: "L9DHUWLhyTtvJbA",
+      aud: "fASx3Xm4zgQV5DcP",
       "https://purl.imsglobal.org/spec/lti/claim/deployment_id": "6",
       "https://purl.imsglobal.org/spec/lti/claim/target_link_uri":
         "https://tst-tsugi.curriki.org/mod/curriki/?activity=600",
