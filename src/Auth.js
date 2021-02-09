@@ -15,7 +15,7 @@ function Auth() {
   });
 
   useEffect(() => {
-    const url = urlParams("redirect_uri");
+    // const url = urlParams("redirect_uri");
 
     axios
       .post("https://tst-tsugi.curriki.org/lti/oidc_launch", state, {
