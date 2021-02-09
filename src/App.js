@@ -10,7 +10,7 @@ export default function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/lti/login/">About</Link>
+            <Link to="/lti/login">About</Link>
           </li>
         </ul>
 
@@ -22,7 +22,7 @@ export default function App() {
           <Route exact path="/">
             <Form />
           </Route>
-          <Route path="/lti/login/*">
+          <Route path="/lti/login">
             <Auth />
           </Route>
         </Switch>
