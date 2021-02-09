@@ -4,6 +4,10 @@
         "route": "/*",
         "serve":"/index.html"
   
+      },
+      {
+        "route": "/lti/jwks",
+        "serve":"/lti/jwks.json"
       }
       
     ]
