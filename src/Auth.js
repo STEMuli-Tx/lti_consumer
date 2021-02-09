@@ -14,7 +14,9 @@ function Auth() {
 
     axios
       .get(
-        "https://stemuli-backend-sandbox.azurewebsites.net/api/lti/token?nonce=`${urlParams('nonce')}`"
+        `https://stemuli-backend-sandbox.azurewebsites.net/api/lti/token?nonce=${urlParams(
+          "nonce"
+        )}`
       )
       .then((res) => {
         const params = {
