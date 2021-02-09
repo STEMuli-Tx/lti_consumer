@@ -19,7 +19,7 @@ function Auth() {
       aud: "L9DHUWLhyTtvJbA",
       "https://purl.imsglobal.org/spec/lti/claim/deployment_id": "6",
       "https://purl.imsglobal.org/spec/lti/claim/target_link_uri":
-        "https://tst-tsugi.curriki.org/mod/curriki/",
+        "https://tst-tsugi.curriki.org/mod/curriki/?activity=600",
       sub: "2",
       "https://purl.imsglobal.org/spec/lti/claim/lis": {
         person_sourcedid: "",
