@@ -33,7 +33,7 @@ function Auth() {
     // var output = document.querySelector("code");
     // output.textContent = JSON.stringify(params, null, 2);
 
-    // document.getElementById("authForm").submit();
+    document.getElementById("authForm").submit();
   });
 
   console.log("here");
