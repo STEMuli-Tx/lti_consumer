@@ -11,10 +11,12 @@ function Auth() {
     var form = document.querySelector("#authForm");
     var today = new Date();
     const exp = today.setHours(today.getHours() + 4);
-
+let sandbox = "https://stemuli-backend-sandbox.azurewebsites.net";
+let local = "http://localhost:5000";
+console.log(local)
     axios
       .get(
-        `https://stemuli-backend-sandbox.azurewebsites.net/api/lti/token?nonce=${urlParams(
+        `${local}/api/lti/token?nonce=${urlParams(
           "nonce"
         )}`
       )

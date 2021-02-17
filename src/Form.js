@@ -6,10 +6,11 @@ function Form() {
   var method = "POST";
 
   var params = {
-    client_id: "fASx3Xm4zgQV5DcP",
+    client_id: "kafdkjfdkljf",
     iss: "https://salmon-mushroom-0db3b0d10.azurestaticapps.net",
     target_link_uri: "https://tst-tsugi.curriki.org/mod/curriki/content",
     login_hint: "7",
+    email:"wade@stemuli.net",
     lti_message_hint: "0",
     lti_deployment_id: "1",
   };
