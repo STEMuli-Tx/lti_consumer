@@ -8,6 +8,9 @@ function Form() {
   var params = {
     client_id: "kafdkjfdkljf",
     iss: "https://salmon-mushroom-0db3b0d10.azurestaticapps.net",
+    "https://purl.imsglobal.org/spec/lti/claim/custom": {
+      person_email_primary: "wade@stemuli.net"
+    },
     target_link_uri: "https://tst-tsugi.curriki.org/mod/curriki/content",
     login_hint: "7",
     email:"wade@stemuli.net",
