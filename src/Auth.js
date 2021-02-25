@@ -11,15 +11,11 @@ function Auth() {
     var form = document.querySelector("#authForm");
     var today = new Date();
     const exp = today.setHours(today.getHours() + 4);
-let sandbox = "https://stemuli-backend-sandbox.azurewebsites.net";
-let local = "http://localhost:5000";
-console.log(local)
+    let sandbox = "https://stemuli-backend-sandbox.azurewebsites.net";
+    let local = "http://localhost:5000";
+    console.log(local);
     axios
-      .get(
-        `${local}/api/lti/token?nonce=${urlParams(
-          "nonce"
-        )}`
-      )
+      .get(`${local}/api/lti/token?nonce=${urlParams("nonce")}`)
       .then((res) => {
         const params = {
           scope: urlParams("scope"),
@@ -31,8 +27,10 @@ console.log(local)
           loginHint: urlParams("login_hint"),
           state: urlParams("state"),
           id_token: res.data,
+          deep_link_return_url: "https://client-stemuli.ngrok.io/redirect",
         };
-
+        console.log(urlParams("redirect_uri"));
+        console.log(params);
         form.action = urlParams("redirect_uri");
         form.method = method;
         for (var name in params) {

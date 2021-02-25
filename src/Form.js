@@ -6,15 +6,17 @@ function Form() {
   var method = "POST";
 
   var params = {
-    client_id: "kafdkjfdkljf",
-    iss: "https://salmon-mushroom-0db3b0d10.azurestaticapps.net",
+    client_id: "fASx3Xm4zgQV5DcP",
+    iss: "https://client-stemuli.ngrok.io",
     "https://purl.imsglobal.org/spec/lti/claim/custom": {
-      person_email_primary: "wade@stemuli.net"
+      person_email_primary: "wade@stemuli.net",
     },
+    "https://purl.imsglobal.org/spec/lti/claim/version": "1.3.0",
     target_link_uri: "https://tst-tsugi.curriki.org/mod/curriki/content",
     login_hint: "7",
-    email:"wade@stemuli.net",
-    lti_message_hint: "0",
+    email: "wade@stemuli.net",
+    lti_message_hint:
+      "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJpZmllciI6IjkyZDU3NzVkYWEwMmIwNTVkYjNhMGQxN2FkNWVkMjQ1MDJiMGUzYTk3ZDRhNmYxOGFlNWYwYjhiNTQ3ZmE0NmNlZDJkM2I5M2Y2ZDJjYmMxZWY1NDBiNTcxZTUyMmM2MGMwN2E1NTUxOTg1ZTZhOTY4MWNiZjg1MTNhN2RkYTA1IiwiY2FudmFzX2RvbWFpbiI6ImNhbnZhcy5jdXJyaWtpLm9yZyIsImNvbnRleHRfdHlwZSI6IkNvdXJzZSIsImNvbnRleHRfaWQiOjEwMDAwMDAwMDAwMjM5LCJleHAiOjE2MTQwOTQxMTd9.-JF5Iso_FJI_Jb4rZP0SfEylxigo0CiZ5RVASUZYhBo",
     lti_deployment_id: "1",
   };
 
