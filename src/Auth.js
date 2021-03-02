@@ -15,7 +15,17 @@ function Auth() {
     let local = "http://localhost:5000";
     console.log(local);
     axios
-      .get(`${local}/api/lti/token?nonce=${urlParams("nonce")}`)
+      .get(
+        ` https://server-stemuli.ngrok.io/api/v1/lti/token?nonce=${urlParams(
+          "nonce"
+        )}`,
+        {
+          headers: {
+            "x-auth-token":
+              "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoSWQiOiI1Zjk2YjBlOWZiZWYzNzAwMjJhOTlmMWMiLCJ1c2VyVHlwZSI6IkRpc3RyaWN0QWRtaW4iLCJhY2NvdW50IjoiNWY4NWEyOThjZGI2MDQzMDYyMjRkYjgwIiwicm9sZSI6eyJfaWQiOiI1ZjliMTFlMmRhMjU1YTAwMjJiYjI3YTAiLCJhY2NvdW50IjoiNWY4NWEyOThjZGI2MDQzMDYyMjRkYjgwIiwibmFtZSI6IkRpc3RyaWN0QWRtaW4iLCJfX3YiOjAsImNyZWF0ZWRBdCI6IjIwMjAtMTAtMjlUMTk6MDI6NTguODY1WiIsInByaXZpbGVnZXMiOnsiYWNjb3VudCI6eyJvd24iOnsicmVhZCI6dHJ1ZSwid3JpdGUiOnRydWV9LCJhY2NvdW50Ijp7InJlYWQiOnRydWUsIndyaXRlIjpmYWxzZX0sImFsbCI6eyJyZWFkIjpmYWxzZSwid3JpdGUiOmZhbHNlfX0sInVzZXIiOnsib3duIjp7InJlYWQiOnRydWUsIndyaXRlIjp0cnVlfSwiYWNjb3VudCI6eyJyZWFkIjp0cnVlLCJ3cml0ZSI6ZmFsc2V9LCJhbGwiOnsicmVhZCI6ZmFsc2UsIndyaXRlIjpmYWxzZX19LCJldmVudHMiOnsib3duIjp7InJlYWQiOnRydWUsIndyaXRlIjp0cnVlfSwiYWNjb3VudCI6eyJyZWFkIjp0cnVlLCJ3cml0ZSI6ZmFsc2V9LCJhbGwiOnsicmVhZCI6ZmFsc2UsIndyaXRlIjpmYWxzZX19LCJjaGF0TWVzc2FnZSI6eyJvd24iOnsicmVhZCI6dHJ1ZSwid3JpdGUiOnRydWV9LCJhY2NvdW50Ijp7InJlYWQiOnRydWUsIndyaXRlIjpmYWxzZX0sImFsbCI6eyJyZWFkIjpmYWxzZSwid3JpdGUiOmZhbHNlfX0sImNoYW5uZWxzIjp7Im93biI6eyJyZWFkIjp0cnVlLCJ3cml0ZSI6dHJ1ZX0sImFjY291bnQiOnsicmVhZCI6dHJ1ZSwid3JpdGUiOmZhbHNlfSwiYWxsIjp7InJlYWQiOmZhbHNlLCJ3cml0ZSI6ZmFsc2V9fX0sInVwZGF0ZWRBdCI6IjIwMjAtMTItMDVUMjI6MjA6MDAuMTY3WiJ9LCJpYXQiOjE2MDcyMDY4MDAsImV4cCI6MTYzODc0MjgwMH0.LwrURezcSLwdd-tOiQRauqYUJONkwejMQFoywJun2iA",
+          },
+        }
+      )
       .then((res) => {
         const params = {
           scope: urlParams("scope"),

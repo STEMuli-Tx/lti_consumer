@@ -14,7 +14,7 @@ export default function App() {
             <Link to="/lti/login">About</Link>
           </li>
           <li>
-            <Link to="/lti/jwks">JWKS</Link>
+            <Link to="/lti/contentitem_return">JWKS</Link>
           </li>
         </ul>
 
@@ -27,6 +27,9 @@ export default function App() {
             <Form />
           </Route>
           <Route path="/lti/login">
+            <Auth />
+          </Route>
+          <Route path="/lti/contentitem_return">
             <Auth />
           </Route>
         </Switch>
